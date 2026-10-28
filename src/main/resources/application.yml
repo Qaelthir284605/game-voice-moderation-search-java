@@ -1,0 +1,5 @@
+server:
+  port: ${PORT:8080}
+voice:
+  collection: ${VOICE_COLLECTION:game_voice_notes}
+  dimension: ${VOICE_DIMENSION:1536}

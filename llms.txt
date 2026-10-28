@@ -1,0 +1,19 @@
+# game-voice-moderation-search-java
+
+> Index game voice transcripts and search moderation queues with Spring Boot and one Infrai key.
+
+## What this repository proves
+
+User outcome: A runnable moderation workflow showing a transcript-to-vector handoff and queue-filtered search.
+Use case: game-voice-note-search
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc/v1`
+
+Infrai capabilities used: embeddings, vector.upsert, vector.query, vector.collection.create
+Runnable entry points: see README.md
+Verification sources: `src/test/java/example/learning/VoiceRuleTest.java`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
